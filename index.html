@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dona Cegonha </title>
+	<link rel="icon" href="cegonhaic.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dona cegonha</title>
+</head>
+
+<body style="background-color:#D8D3B0 ;color: #4B4B48;">
+	INICIO |
+  
+	<a href="confira.html">CONFIRA NOSSOS PRODUTOS</a> |
+
+	<a href="alimentacao.html">ALIMENTAÇÃO</a> |
+
+   <a href="contatos.html">CONTATOS</a> |
+
+   <a href="sobrenos.html">SOBRE NÓS</a> |
+
+   <hr>
+   <h1 align="center" style="background-color:red;" >Faça seu cadastro e ganhe 10% na sua primeira compra!
+   <details>
+   	 <summary>CADASTRE-SE!</summary>
+   	 <fieldset style="background-color:#D8D3B0 ;color: #4B4B48;">
+      <legend><b>Dados Pessoais</b></legend>
+    
+        <label for="nome">Nome:</label><br>
+        <input type="text" name="nome" id="nome" size="50" required minlength="3" maxlength="20" spellcheck="true" placeholder="Informe o seu nome completo"> 
+
+        <br><br>          
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" name="idade" id="idade" min="15" max="40" step="5" placeholder="15-40">   
+
+        <br><br>          
+
+        <label for="sexo">Sexo:</label><br>
+        <input type="radio" name="sexo" id="sexo" value="F" checked> F
+        <input type="radio" name="sexo" id="sexo" value="M"> M            
+
+        <br><br>
+
+        <label for="dtNasc">Data de Nascimento:</label><br>
+        <input type="date" name="dtNasc" id="dtNasc">
+
+        <br><br>      
+
+        <label for="foto">Foto:</label><br>
+        <input type="file" name="foto" id="foto" accept="image/png">  
+
+        <br><br>
+
+        <label for="login">Login:</label><br>
+        <input type="text" name="login" id="login" size="15" minlength="8" maxlength="15" disabled>
+
+        <br><br>
+        <label for="senha">Senha:</label><br>
+        <input type="password" name="senha" id="senha" size="15" minlength="8" maxlength="15">      
+    </fieldset>
+
+    <fieldset>
+      <legend><b>Dados Profissionais</b></legend>
+
+      <label for="cargo">Cargo:</label><br>
+      <input type="text" name="cargo" id="cargo" size="20" value="Professor(a)" readonly>  
+
+      <br><br>
+      <label for="manha">Período de trabalho:</label><br>
+      <input type="checkbox" name="manha" id="manha" value="manhã"> Manhã
+      <input type="checkbox" name="tarde" id="tarde" value="tarde" checked> Tarde
+      <input type="checkbox" name="noite" id="noite" value="noite"> Noite
+
+      <br><br>
+      <label for="cor">Cor da camiseta:</label><br>
+      <input type="color" name="cor" id="cor" value="#0000ff"> 
+
+      <br><br>
+      <label for="nota">Quanto você se sente preparado para a função:</label><br>
+      0 <input type="range" name="nota" id="nota" min="0" max="10" value="8"> 10
+
+      <br><br>
+      <label for="curso">Curso:</label><br>
+      <select name="curso" id="curso">
+        <option></option>
+        <option value="Agrimensura">Agrimensura</option>        
+        <option value="DS" selected>Des. Sistemas</option>        
+        <option value="Edificações">Edificações</option>        
+        <option value="Enfermagem">Enfermagem</option>        
+        <option value="Mecânica">Mecânica</option>        
+        <option value="Prótese">Prótese</option>        
+        <option value="Qualidade">Qualidade</option>        
+      </select>
+
+      <br><br>
+      <label for="disciplinas">Disciplinas Preferidas:</label><br>
+      <select name="disciplinas" id="disciplinas" size="6" multiple>
+        <option value="BD">Banco de Dados</option>        
+        <option value="DAW">Des. App. Web</option>        
+        <option value="FI">Fundamentos Informática</option>        
+        <option value="LP">Log. Prog.</option>        
+        <option value="PI">Projeto Integrador</option>        
+        <option value="LM">Ling. Multiplataforma</option>        
+      </select>
+      <br>
+      <small>(ctrl+click p/ múltipla seleção)</small>      
+
+      <br><br>
+      <label for="formacao">Formação:</label><br>
+      <select name="formacao" id="formacao">
+        <option></option>
+        <optgroup label="Graduação">
+          <option value="Engenharia">Engenharia</option>        
+          <option value="Tecnologia">Tecnologia</option>        
+          <option value="Humanas">Humanas</option>        
+          <option value="Exatas">Exatas</option>        
+          <option value="Biológicas">Biológicas</option>        
+        </optgroup>
+
+        <optgroup label="Pós-Graduação">
+          <option value="Mestrado">Mestrado</option>        
+          <option value="Doutorado">Doutorado</option>        
+          <option value="Posdoc">Pós Doc</option>        
+        </optgroup>        
+      </select>
+
+      <br><br>
+
+      <label for="conhecimento">Conhecimento:</label><br>
+      <input type="text" id="conhecimento" name="conhecimento" list="lista-conhecimentos">
+
+      <datalist id="lista-conhecimentos">
+        <option value="HTML5">HTML5</option>
+        <option value="HTML4">HTML4</option>
+        <option value="CSS3">CSS3</option>
+        <option value="PHP">PHP</option>      
+      </datalist>        
+
+    </fieldset>
+
+    <fieldset>
+      <legend><b>Datas</b></legend>
+
+      <label for="dtCad">Data e Hora do Cadastro:</label><br>
+      <input type="datetime-local" name="dtCad" id="dtCad">    
+
+      <br><br>
+
+      <label for="hrCad">Hora do Cadastro:</label><br>
+      <input type="time" name="hrCad" id="hrCad">    
+      <br><br>    
+
+      <label for="mes">Mês de férias:</label><br>
+      <input type="month" name="mes" id="mes">    
+      <br><br>    
+
+      <label for="semana">Semana do saco cheio:</label><br>
+      <input type="week" name="semana" id="semana"> 
+
+    </fieldset>
+
+    <fieldset>      
+      <legend>Formas de contato</legend>
+
+      <label for="msg">Mensagem:</label><br>
+      <textarea id="msg" name="msg" rows="10" cols="50" minlength="20" maxlength="100" placeholder="Digite uma msg que tenha de 20 a 100 caracteres" spellcheck="true"></textarea>
+
+      <br><br>
+
+      <label for="email">e-Mail:</label><br>
+      <input type="email" name="email" id="email">
+
+      <br><br>
+
+      <label for="site">Site:</label><br>
+      <input type="url" name="site" id="site">     
+
+      <br><br>
+
+      <label for="busca">Busca:</label><br>
+      <input type="search" name="busca" id="busca">      
+
+    </fieldset>
+</details>
+
+	<hr>
+
+	<h1 align="center">Sejam bem vindos(as) nessa página você terá ajuda com produtos para seu bebê e  suporte para tirar suas dúvidas </h1>
+
+	<h1 align="center">ÁUDIO</h1>
+	<hr>
+	<audio autoplay muted controls loop preload="auto">
+		<source src="somteste.mp3" type="audio/mp3">
+	</audio>
+
+	<center>
+		<figure>
+	<img src="cegonha.jpeg" width="700px" title=" donacegonhababykids" alt="donacegonhababykids">
+	</center>
+	<figcaption>dona cegonha</figcaption>
+</figure>
+
+    <h1 align="center">
+<p>A Dona cegonha te visitou? Não se preocupe! aqui iremos fornecer diversas dicas e ajuda com o seu barrigão!</p></h1>
+
+	<h1 align= center style="color:#D65151">Queridinho das mamães!</h1>
+	<center>
+	<h2 style="color:black;">Chupeta Philips Avent </h2>
+	
+	<table>
+		<figure>
+		
+
+</figure>
+		</td>
+	</tr>
+
+	</table>
+
+
+	<h1 align="center">ÁUDIO</h1>
+	<hr>
+	<audio autoplay muted controls loop preload="auto">
+		<source src="audio/u2-one.mp3" type="audio/mp3">
+	</audio>
+</body>
+
+</html>
